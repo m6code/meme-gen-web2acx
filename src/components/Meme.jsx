@@ -35,7 +35,7 @@ export default function Meme() {
     return (
         <main>
             <div className="form">
-                <div>
+                <div className="lbl-one">
                     <label htmlFor="top-text">Top Text</label>
                     <input
                         id="top-text"
@@ -47,7 +47,7 @@ export default function Meme() {
                         onChange={handleChange}
                     />
                 </div>
-                <div>
+                <div className="lbl-two">
                     <label htmlFor="bottom-text">Bottom Text</label>
                     <input
                         id="bottom-text"
