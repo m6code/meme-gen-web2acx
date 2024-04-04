@@ -35,26 +35,31 @@ export default function Meme() {
     return (
         <main>
             <div className="form">
-                <label htmlFor="top-text">Top Text</label>
-                <input
-                    id="top-text"
-                    type="text"
-                    placeholder="Top text"
-                    className="form--input"
-                    name="topText"
-                    value={meme.topText}
-                    onChange={handleChange}
-                />
-                <label htmlFor="bottom-text"></label>
-                <input
-                    id="bottom-text"
-                    type="text"
-                    placeholder="Bottom text"
-                    className="form--input"
-                    name="bottomText"
-                    value={meme.bottomText}
-                    onChange={handleChange}
-                />
+                <div>
+                    <label htmlFor="top-text">Top Text</label>
+                    <input
+                        id="top-text"
+                        type="text"
+                        placeholder="Top text"
+                        className="form--input"
+                        name="topText"
+                        value={meme.topText}
+                        onChange={handleChange}
+                    />
+                </div>
+                <div>
+                    <label htmlFor="bottom-text">Bottom Text</label>
+                    <input
+                        id="bottom-text"
+                        type="text"
+                        placeholder="Bottom text"
+                        className="form--input"
+                        name="bottomText"
+                        value={meme.bottomText}
+                        onChange={handleChange}
+                    />
+                </div>
+
                 <button
                     className="form--button"
                     onClick={getMemeImage}

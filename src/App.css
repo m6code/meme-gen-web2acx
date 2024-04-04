@@ -100,3 +100,7 @@ main {
 .top {
     top: 0;
 }
+
+div label {
+    display: block;
+}
